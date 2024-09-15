@@ -18,5 +18,8 @@ Homepage = "https://github.com/faetherlabs/sdk-python"
 Issues = "https://github.com/faetherlabs/sdk-python/issues"
 
 [build-system]
-requires = ["setuptools>=42", "wheel", "setuptools-scm"]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "faether/_version.py"
